@@ -1,0 +1,58 @@
+@import 'vars';
+
+.contact-table {
+  border:1px solid #b3adad;
+  border-collapse:collapse;
+  padding:5px;
+  margin-top: 80px;
+}
+
+.contact-table th {
+  border:1px solid #b3adad;
+  padding:5px;
+  background: #539348;
+  color: #000000;
+  border-radius: 5px 5px 0 0;
+}
+
+.contact-table td {
+  margin-top: 40px;
+  border:1px solid #b3adad;
+  text-align:center;
+  padding:5px;
+  background: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 68px auto 52px auto;
+  font-size: var(--lg);
+  color: #60666d;
+}
+
+.select-box-input {
+  width: 400px;
+  margin: 0;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #539348;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+  cursor: pointer;
+  outline: none;
+}
+
+.select-box-input option {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.select-box-input option:hover,
+.select-box-input option:focus {
+  color: #546c84;
+  background-color: #fbfbfb;
+}

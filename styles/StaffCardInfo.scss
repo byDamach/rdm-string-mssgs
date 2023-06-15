@@ -1,0 +1,68 @@
+@import 'vars';
+
+.place-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 10px));
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cards-staff {
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #dad0d0;
+    border-radius: 16px;
+    width: 280px;
+    height: 156px;
+    margin: 40px 20px;
+    padding: 10px;
+    box-shadow: 0 2px rgba(0, 0 , 0, 0.2);
+    overflow: hidden;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.cards-staff:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0 , 0, 0.2);
+    border: 1px solid #539348;
+}
+
+.cards-staff:hover h3{
+    color: #539348;
+}
+
+.cards-staff .main-info {
+    height: 138px;
+}
+
+.cards-staff .secondary-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid #dad0d0;
+    border-bottom: 1.5px solid #dad0d0;
+    height: 84px;
+}
+
+.cards-staff h3 {
+    margin: 10px auto 16px;
+    text-align: center;
+}
+
+.cards-staff h4 {
+    margin: 10px auto 8px;
+    text-align: center;
+}
+
+.cards-staff .main-info p {
+    text-align: center;
+    margin: 0;
+}
+.cards-staff .secondary-info p {
+    text-align: justify;
+}
+
+.cards-staff .secondary-info p {
+    font-size: var(--sm);
+}

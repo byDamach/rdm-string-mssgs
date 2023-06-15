@@ -1,0 +1,51 @@
+@import "vars";
+
+.nav-info-suppliers {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+}
+
+.navigation-menu{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    height: 58px;
+}
+
+.navigation-menu link{
+    cursor: pointer;
+}
+
+.nav-info-suppliers a {
+    position: relative;
+    font-size: var(--lg);
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+.nav-info-suppliers a:hover {
+    color: #539348;
+}
+
+.nav-info-suppliers a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #539348;
+    transition: .3s;
+}
+
+.nav-info-suppliers a:hover::before {
+    width: 100%;
+}
